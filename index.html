@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <title>Checkout page master</title>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <header class="header">
+        <h1>Checkout</h1>
+      </header>
+
+      <main class="main">
+
+        <section class="section">
+
+          <form class="grid-form">
+
+            <div class="data">
+              <fieldset class="fieldset">
+                <legend>Contact information</legend>
+
+                <div class="box-input">
+                  <label for="email">E-mail</label>
+                  <span class="material-icons">
+                    email
+                  </span>
+                  <input type="email" name="email" placeholder="Enter your email..." autocomplete="off" id="email"  />
+                </div>
+
+                <div class="box-input">
+                  <label for="phone">Phone</label>
+                  <span class="material-icons">
+                    phone
+                  </span>
+                  <input type="tel" name="phone" placeholder="Enter your phone..." autocomplete="off" id="phone"  />
+                </div>
+
+              </fieldset>
+
+              <fieldset class="fieldset bottom">
+                <legend>Shipping address</legend>
+
+                <div class="box-input">
+                  <label for="name">Full name</label>
+                  <span class="material-icons">
+                    account_circle
+                  </span>
+                  <input type="text" name="name" placeholder="Enter your name..." autocomplete="off" id="name"  />
+                </div>
+
+                <div class="box-input">
+                  <label for="address">Address</label>
+                  <span class="material-icons">
+                    home
+                  </span>
+                  <input type="text" name="address" placeholder="Your address..." autocomplete="off" id="address"  />
+                </div>
+                
+                <div class="box-input">
+                  <label for="city">City</label>
+                  <span class="material-icons">
+                    location_city
+                  </span>
+                  <input type="text" name="city" placeholder="Your city..." autocomplete="off" id="city"  />
+                </div>
+
+                <div class="box-input-select">
+
+                  <div class="box-input">
+                    <label for="country">Country</label>
+                    <span class="material-icons">
+                      public
+                    </span>
+                    <select name="country" id="country" title="Your"  >
+                      <option disabled selected>Your country...</option>
+                      <option value="country1">Country1</option>
+                      <option value="country2">Country2</option>
+                      <option value="country3">Country3</option>
+                    </select>
+                  </div>
+
+                  <div class="box-input">
+                    <span class="material-icons">
+                      markunread_mailbox
+                    </span>
+                    <label for="postal">Postal Code</label>
+                    <input type="text" name="postal" id="postal" placeholder="Your postal code..."  autocomplete="off" />
+                  </div>
+
+                </div>
+
+              </fieldset>
+
+              <div class="checkbox">
+                <input type="checkbox" id="cbox" value="checkbox_value"> 
+                <label for="cbox">Save this information for next time</label>
+              </div>
+
+              <button type="submit">Continue</button>
+            </div>
+
+            <div class="products">
+
+              <div class="box-product">
+
+                <div class="box-img">
+                  <img src="./photo1.png" alt="photo 1">
+                </div>
+
+                <div class="box-data">
+                  
+                  <h2>Vintage Backbag</h2>
+
+                  <div class="price">
+                    <p class="orange product1">$54.99</p>
+                    <p class="old-price">$94.99</p>
+                  </div>
+
+                  <div class="number">
+                    <span class="material-icons remove">
+                      remove
+                    </span>
+                    <input type="number" value="1" disabled />
+                    <span class="material-icons add">
+                      add
+                    </span>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="box-product">
+
+                <div class="box-img">
+                  <img src="./photo2.png" alt="photo 1">
+                </div>
+
+                <div class="box-data">
+                  <h2>Levi Shoes</h2>
+
+                  <div class="price">
+                    <p class="orange product2">$74.99</p>
+                    <p class="old-price">$124.99</p>
+                  </div>
+
+                  <div class="number">
+                    <span class="material-icons remove">
+                      remove
+                    </span>
+                    <input type="number" value="1" disabled />
+                    <span class="material-icons add">
+                      add
+                    </span>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="money">
+                <h2>Shipping</h2>
+                <p>$19</p>
+              </div>
+  
+              <div class="money">
+                <h2>Total</h2>
+                <p class="total">$149.98</p>
+              </div>
+
+            </div>
+
+          </form>
+
+        </section>
+
+      </main>
+
+      <footer>
+        <p>Created by Gabriel Rea - <a href="https://devchallenges.io/" target="_blank">devChallenges.io</a></p>
+      </footer>
+
+  </div>
+
+  <script src="main.js" type="module"></script>
+  </body>
+</html>

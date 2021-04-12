@@ -1,0 +1,420 @@
+/* "Montserrat" */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+:root {
+  --font: "Montserrat", "Arial", monospace;
+
+  --gray1: #333333;
+  --gray2: #4f4f4f;
+  --gray3: #828282;
+  --gray4: #bdbdbd;
+  --gray5: #e0e0e0;
+
+  --colorTitle: #4e5150;
+
+  --orange: #f2994a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+p,
+legend,
+label,
+input,
+select {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--colorTitle);
+  outline: none;
+}
+
+h2 {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--gray1);
+}
+
+p.orange {
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--orange);
+  margin-right: 10px;
+}
+
+p.old-price {
+  font-size: 10px;
+  line-height: 12px;
+  text-decoration-line: line-through;
+  color: var(--colorTitle);
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--gray1);
+}
+
+label {
+  font-size: 10px;
+  line-height: 12px;
+  color: var(--gray2);
+}
+
+input,
+select {
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--gray1);
+}
+
+input::placeholder {
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--gray3);
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.header {
+  margin-bottom: 50px;
+}
+
+.grid-form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.products {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.box-product {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.box-product .box-img {
+  width: 122.75px;
+  height: 124.64px;
+  margin-right: 20px;
+}
+
+.box-product .box-img img {
+  border-radius: 13px;
+}
+
+.box-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box-data .price {
+  display: flex;
+  align-items: center;
+}
+
+.box-data .number {
+  width: 122.8px;
+  height: 49.86px;
+  position: relative;
+}
+
+.box-data .number .material-icons {
+  position: absolute;
+  color: var(--gray3);
+  background-color: var(--gray5);
+  border-radius: 4px;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.box-data .number .material-icons.add {
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  margin: auto;
+}
+
+.box-data .number .material-icons.remove {
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  margin: auto;
+}
+
+.box-data .number input {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border: 1px solid var(--gray3);
+  border-radius: 12px;
+}
+
+.money {
+  border-top: 1px solid var(--gray4);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.money h2 {
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--gray1);
+}
+
+.money p {
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--gray1);
+}
+
+.data {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.data .fieldset {
+  margin-bottom: 40px;
+}
+
+.data .fieldset.bottom {
+  margin-bottom: 0;
+}
+
+.data legend {
+  margin-bottom: 12px;
+}
+
+.box-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.box-input .material-icons {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  bottom: 13.5px;
+  left: 11px;
+  font-size: 15px;
+  color: var(--gray3);
+}
+
+.box-input label {
+  margin-bottom: 5px;
+}
+
+.box-input input,
+select {
+  border: 1px solid var(--gray3);
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding: 12px 0;
+  padding-left: 32px;
+  padding-right: 10px;
+}
+
+.box-input-select {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-input-select input,
+.box-input-select select {
+  width: 135px;
+}
+
+.box-input-select select {
+  margin-right: 10px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input.error,
+select.error {
+  border: 1px solid red;
+}
+
+.checkbox input {
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--gray3);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-right: 7px;
+}
+
+.checkbox label {
+  font-size: 10px;
+  line-height: 12px;
+  color: var(--gray2);
+  cursor: pointer;
+}
+
+button {
+  align-self: flex-end;
+  border: none;
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 600;
+  color: white;
+  background-color: var(--orange);
+  padding: 17px 40px;
+  border-radius: 12px;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  filter: opacity(0.5);
+}
+
+footer {
+  margin-top: 100px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--gray4);
+}
+
+footer a {
+  color: var(--gray4);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .fieldset legend {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .fieldset label {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  input,
+  select {
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--gray1);
+  }
+
+  input::placeholder {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .grid-form {
+    display: grid;
+    max-width: 1024px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+  }
+
+  .data {
+    order: 0;
+  }
+
+  .box-input .material-icons {
+    height: 17px;
+    width: 17px;
+    bottom: 15.5px;
+    left: 11px;
+    font-size: 18px;
+  }
+
+  .checkbox input {
+    width: 21px;
+    height: 21px;
+  }
+
+  .checkbox label {
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--gray2);
+  }
+
+  p.orange {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .box-data h2 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .money h2 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .money p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .box-input-select input,
+  .box-input-select select {
+    width: 205px;
+  }
+}
